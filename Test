@@ -1,16 +1,9 @@
-
-const { token } = require("./config.json");
 const discord = require("discord.js"); 
-const client = new discord.Client({
-  disableEveryone: true 
-});
+const client = new discord.Client()
 
-client.commands = new discord.Collection();
-client.aliases = new discord.Collection();
-
-["command", "events"].forEach(handler => {
-  require(`./handlers/${handler}`)(client);
-});
+client.on(¨ready¨, () => (
+console.log(¨Engineer_njtransit 125 memebers!¨)
+}};
 
 
 client.login(
